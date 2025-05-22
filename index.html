@@ -1,92 +1,170 @@
-<style>
-  body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  header h1 {
-    margin: 0;
-    font-size: 3em;
-    font-weight: 700;
-  }
-  header p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    opacity: 0.9;
-  }
-  main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  section {
-    margin-bottom: 50px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  section h2 {
-    font-size: 2.2em;
-    margin-bottom: 15px;
-    color: #1e3c72;
-    border-bottom: 2px solid #2a5298;
-    padding-bottom: 5px;
-  }
-  section p {
-    font-size: 1.1em;
-    color: #555;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  ul li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 15px 20px;
-    border-radius: 8px;
-    border-left: 5px solid #2a5298;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  ol {
-    padding-left: 20px;
-  }
-  ol li {
-    margin: 10px 0;
-    font-size: 1.1em;
-  }
-  a {
-    color: #2a5298;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    background: #1e3c72;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    font-size: 0.9em;
-  }
-  footer p {
-    margin: 0;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skate Tricktionary Interattivo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/pages/style.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 3em;
+        font-weight: 700;
+      }
+      header p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        opacity: 0.9;
+      }
+      main {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      section {
+        margin-bottom: 50px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      section h2 {
+        font-size: 2.2em;
+        margin-bottom: 15px;
+        color: #1e3c72;
+        border-bottom: 2px solid #2a5298;
+        padding-bottom: 5px;
+      }
+      section p {
+        font-size: 1.1em;
+        color: #555;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        background: #f4f4f4;
+        margin: 10px 0;
+        padding: 15px 20px;
+        border-radius: 8px;
+        border-left: 5px solid #2a5298;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      ul li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      ol {
+        padding-left: 20px;
+      }
+      ol li {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+      a {
+        color: #2a5298;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        background: #1e3c72;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        font-size: 0.9em;
+      }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Skate Tricktionary Interattivo</h1>
+      <p>La risorsa definitiva per imparare e perfezionare i tuoi trick!</p>
+    </header>
+    <main>
+      <section>
+        <h2>Introduzione</h2>
+        <p>
+          Benvenuti nello Skate Tricktionary Interattivo! Questo progetto è una
+          risorsa completa e dinamica pensata per tutti gli skater, dai
+          principianti assoluti ai professionisti esperti. Scopri, impara e
+          perfeziona i tuoi trick con facilità.
+        </p>
+      </section>
+      <section>
+        <h2>Caratteristiche Principali</h2>
+        <ul>
+          <li>Ampio database di trick categorizzati per difficoltà e tipo.</li>
+          <li>Descrizioni dettagliate e video tutorial integrati.</li>
+          <li>Immagini esplicative e suggerimenti personalizzati (futuro).</li>
+          <li>Modalità offline e progress tracking (futuro).</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Come Iniziare</h2>
+        <p>
+          Segui questi semplici passaggi per avviare il progetto sul tuo
+          ambiente locale:
+        </p>
+        <ol>
+          <li>Clona il repository da GitHub.</li>
+          <li>Installa le dipendenze del frontend e del backend.</li>
+          <li>
+            Avvia i server di sviluppo per esplorare tutte le funzionalità.
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Roadmap Futura</h2>
+        <p>
+          Il progetto è in continua evoluzione. Alcune funzionalità future
+          includono:
+        </p>
+        <ul>
+          <li>Profili utente e progress tracking.</li>
+          <li>Raccomandazioni personalizzate basate sul livello di abilità.</li>
+          <li>Modalità "Sfida" per generare trick casuali.</li>
+          <li>App mobile nativa per iOS e Android.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contatti</h2>
+        <p>
+          Per domande o suggerimenti, contattaci via email:
+          <a href="mailto:tuo.email@example.com">tuo.email@example.com</a>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2023 Skate Tricktionary Interattivo. Tutti i diritti riservati.
+      </p>
+    </footer>
+  </body>
+</html>
